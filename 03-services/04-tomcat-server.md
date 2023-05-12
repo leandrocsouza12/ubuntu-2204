@@ -146,7 +146,12 @@ Pages e não é um container Enterprise JavaBeans. Desenvolvido pela Apache Soft
 
 #13_ Testando o Apache Tomcat Server no navegador<br>
 
-	firefox ou google chrome: http://endereço_ipv4_ubuntuserver:8080
+	#editando o arquivo de criação de usuários do Tomcat
+sudo vim /opt/tomcat/conf/tomcat-users.xml
+
+#verificando o serviço do Apache Tomcat Server
+sudo systemctl restart tomcat10
+sudo systemctl status tomcat10firefox ou google chrome: http://endereço_ipv4_ubuntuserver:8080
 
 #14_ Administrando o Apache Tomcat Server<br>
 
